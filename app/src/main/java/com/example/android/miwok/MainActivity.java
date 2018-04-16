@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the colors View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent colorsIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
                 startActivity(colorsIntent);
                 Toast.makeText(view.getContext(),"You are in the Colors Section", Toast.LENGTH_SHORT).show();
             }
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the family View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent familyIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
                 startActivity(familyIntent);
                 Toast.makeText(view.getContext(),"You are in the Family Section", Toast.LENGTH_SHORT).show();
             }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
             // The code in this method will be executed when the phrases View is clicked on.
             @Override
             public void onClick(View view) {
-                Intent phrasesIntent = new Intent(MainActivity.this, NumbersActivity.class);
+                Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(phrasesIntent);
                 Toast.makeText(view.getContext(),"You are in the Phrases Section", Toast.LENGTH_SHORT).show();
             }
