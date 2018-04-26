@@ -3,20 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:orientation="vertical">
+    android:orientation="horizontal"
+    android:background="@color/tan_background"
+    android:minHeight="@dimen/list_item_height">
 
-    <TextView
-        android:id="@+id/item_1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="lutti"/>
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/list_item_height"
+        android:background="@color/tan_background"
+        android:layout_height="@dimen/list_item_height"
+        tools:src="@mipmap/ic_launcher" />
 
-    <TextView
-        android:id="@+id/item_2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        tools:text="one"
-        />
+    <LinearLayout
+        android:id="@+id/text_container"
+        android:layout_width="match_parent"
+        android:layout_height="88dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:id="@+id/item_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textColor="@color/text_color"
+            android:layout_toRightOf="@+id/imageView"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            tools:text="lutti" />
+
+        <TextView
+            android:id="@+id/item_2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/text_color"
+            android:layout_weight="1"
+            android:gravity="top"
+            tools:text="one" />
+
+    </LinearLayout>
 
 </LinearLayout>
