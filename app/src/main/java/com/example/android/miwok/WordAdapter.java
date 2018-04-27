@@ -69,7 +69,7 @@ public class WordAdapter extends ArrayAdapter<Word> {
             iconView.setVisibility(View.GONE);
         }
 
-        View textContainer = iconView.findViewById(R.id.text_container);
+        View textContainer = listItemView.findViewById(R.id.text_container);
 
         int color = ContextCompat.getColor(getContext(), mColorResourceId);
 
