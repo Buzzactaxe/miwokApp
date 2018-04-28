@@ -4,21 +4,24 @@ public class Word {
 
     private String mMiwokeTranslation;
     private String mEnglishTranslation;
+    private int mAudioRecoureId;
     private int mImageResource = NO_IMAGE_PROVIDED;
 
     private static final int NO_IMAGE_PROVIDED = -1;
 
-    public Word(String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation, int audioRecoureId) {
 
         mEnglishTranslation = defaultTranslation;
         mMiwokeTranslation = miwokTranslation;
+        mAudioRecoureId = audioRecoureId;
     }
 
-    public Word(String defaultTranslation, String miwokTranslation, int imageView) {
+    public Word(String defaultTranslation, String miwokTranslation, int imageView, int audioResourceId) {
 
         mEnglishTranslation = defaultTranslation;
         mMiwokeTranslation = miwokTranslation;
         mImageResource = imageView;
+        mAudioRecoureId = audioResourceId;
     }
 
     public String getDefaultTranslation(){
@@ -44,6 +47,11 @@ public class Word {
 
         return mImageResource != NO_IMAGE_PROVIDED;
 
+    }
+
+    public int getAudioResourceId() {
+
+        return mAudioRecoureId;
     }
 
 }
