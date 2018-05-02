@@ -2,12 +2,11 @@ package com.example.android.miwok;
 
 public class Word {
 
+    private static final int NO_IMAGE_PROVIDED = -1;
     private String mMiwokeTranslation;
     private String mEnglishTranslation;
     private int mAudioRecoureId;
     private int mImageResource = NO_IMAGE_PROVIDED;
-
-    private static final int NO_IMAGE_PROVIDED = -1;
 
     public Word(String defaultTranslation, String miwokTranslation, int audioRecoureId) {
 
@@ -24,7 +23,7 @@ public class Word {
         mAudioRecoureId = audioResourceId;
     }
 
-    public String getDefaultTranslation(){
+    public String getDefaultTranslation() {
 
         return mEnglishTranslation;
     }
@@ -41,9 +40,10 @@ public class Word {
 
     /**
      * Returns if Word has an Image or not
+     *
      * @return
      */
-    public boolean hasImage(){
+    public boolean hasImage() {
 
         return mImageResource != NO_IMAGE_PROVIDED;
 

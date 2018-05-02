@@ -13,14 +13,6 @@
         android:layout_height="@dimen/list_item_height"
         tools:src="@mipmap/ic_launcher" />
 
-    <ImageView
-        android:layout_width="24dp"
-        android:layout_height="24dp"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"
-        android:layout_marginRight="16dp"
-        android:src="@drawable/ic_play_arrow_white" />
-
     <LinearLayout
         android:id="@+id/text_container"
         android:layout_width="match_parent"
@@ -54,5 +46,13 @@
             tools:text="one" />
 
     </LinearLayout>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_play_arrow_white" />
 
 </RelativeLayout>

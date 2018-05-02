@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent numbersIntent = new Intent(MainActivity.this, NumbersActivity.class);
                 startActivity(numbersIntent);
-                Toast.makeText(view.getContext(),"You are in the Numbers Section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You are in the Numbers Section", Toast.LENGTH_SHORT).show();
 
             }
         });
@@ -50,13 +50,13 @@ public class MainActivity extends AppCompatActivity {
         TextView colors = (TextView) findViewById(R.id.colors);
 
 // Set a click listener on that View
-       colors.setOnClickListener(new View.OnClickListener() {
+        colors.setOnClickListener(new View.OnClickListener() {
             // The code in this method will be executed when the colors View is clicked on.
             @Override
             public void onClick(View view) {
                 Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
                 startActivity(colorsIntent);
-                Toast.makeText(view.getContext(),"You are in the Colors Section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You are in the Colors Section", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent familyIntent = new Intent(MainActivity.this, FamilyActivity.class);
                 startActivity(familyIntent);
-                Toast.makeText(view.getContext(),"You are in the Family Section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You are in the Family Section", Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -84,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent phrasesIntent = new Intent(MainActivity.this, PhrasesActivity.class);
                 startActivity(phrasesIntent);
-                Toast.makeText(view.getContext(),"You are in the Phrases Section", Toast.LENGTH_SHORT).show();
+                Toast.makeText(view.getContext(), "You are in the Phrases Section", Toast.LENGTH_SHORT).show();
             }
         });
 
